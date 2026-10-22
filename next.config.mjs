@@ -9,13 +9,7 @@
 
 export default {
     output: 'export',
-    experimental: {
-        appDir: true,
-    },
     images: {
         unoptimized: true,
-    },
-    pwa: {
-        dest: 'public',
     },
 };
