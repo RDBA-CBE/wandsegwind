@@ -13,7 +13,7 @@ export default function AboutWandseSection() {
     <section className="w-full py-10">
       <div className="flex flex-col lg:flex-row items-center lg:items-stretch">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 max-w-[90%] 2xl:max-w-[80%] mx-auto px-6 sm:px-8 py-8 lg:py-12 lg:ml-10">
+        <div className="w-full lg:w-1/2 max-w-[90%] 2xl:max-w-[80%] mx-auto px-0 lg:pe-4 xl:px-8 py-0 lg:py-12 lg:ml-10">
           <div className="flex items-center gap-3 mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#293E52]">
               About us

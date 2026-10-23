@@ -82,7 +82,7 @@ const toggleItem = (label) => {
 
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-gray-900">
+    <div className="relative w-full h-[92vh] overflow-hidden bg-gray-900">
       {/* Background GIF */}
       <video
   src="/images/banner.mp4" // replace with your actual video path
