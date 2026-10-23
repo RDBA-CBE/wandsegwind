@@ -74,7 +74,7 @@ const SpareInventory = () => {
 
   return (
     <div className=" p-4 md:p-8">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
         {/* Header Section */}
         <div className="mb-8 text-center">
           <div className="flex items-center justify-center gap-2 mb-3">

@@ -113,7 +113,7 @@ export default function ExecutiveMessageTabs() {
 
   return (
     <div className="bg-gradient-to-b from-[#329ACD] to-[#3AB257] px-4 sm:px-6 lg:px-8 py-16">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto">
         {/* Tabs Navigation */}
         <div className="flex gap-4 mb-12 justify-center flex-wrap">
           {tabsData.map((tab) => (

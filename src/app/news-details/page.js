@@ -106,7 +106,7 @@ function NewsInnerContent() {
     );
  
   return (
-    <main className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+    <main className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 pt-12">
      
       {/* Header */}
       <div className="mb-8">

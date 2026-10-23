@@ -9,7 +9,7 @@ export default function Contact() {
       <InnerBanner title="Contact" bgImage="/images/contact-banner.png" />
 
       <main className="bg-background">
-        <div className="mx-auto max-w-[90%] 2xl:max-w-[80%] px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] px-4 py-12 sm:px-6 lg:px-8">
           <div className="grid gap-10 grid-cols-12 ">
             {/* Left — GWind + WandSe contact cards */}
             <ContactInfo />

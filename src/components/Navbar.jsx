@@ -118,12 +118,13 @@ export function Navbar() {
   const wandseDropdown = [
     { label: "Wind Turbine Spare Parts", href: "/solutions/wandse/wind-turbine-spare-parts" },
     { label: "Solar Plant Spare Parts", href: "/solutions/wandse/solar-plant-spare-parts" },
+    { label: "Expertise", href: "/expertise" },
   ];
 
   const solutionMenu = [
     {
       label: "Gwind Solution",
-      href: "/solutions",
+      href: "/solutions/gwind",
       children: solutionDropdown,
     },
     {
@@ -143,7 +144,7 @@ export function Navbar() {
     },
     {
       label: "O & M Contract",
-      href: "/solutions",
+      href: "#",
       dropdown: omDropdown,
     },
     {
@@ -151,7 +152,7 @@ export function Navbar() {
       href: "#",
       dropdown: inventoryDropdown,
     },
-    { label: "Expertise", href: "/expertise" },
+    
     { label: "Projects", href: "/project" },
     { label: "IMS @ GWind", href: "/ims@gwind" },
     { label: "News & Media", href: "/news" },
@@ -159,11 +160,11 @@ export function Navbar() {
     { label: "Corporate", href: "/corporate" },
   ]
 
-  const isActive = (href) => pathname === href
+  const isActive = (href) => href !== "#" && (pathname === href || pathname.startsWith(href + "/"))
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div>
@@ -188,7 +189,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden xl:flex items-center gap-8 relative">
+          <div className="hidden xl:flex items-center gap-5 2xl:gap-8 relative">
             {navItems.map((item) => (
               <div key={item.label} className="relative group">
                 <div
@@ -297,17 +298,13 @@ export function Navbar() {
             isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
           }`}
         >
-          <div className="pb-4 flex flex-col gap-2 pt-4">
+          <div className="pb-4 flex flex-col gap-2 pt-4 px-4">
             {navItems.map((item) => (
               <div key={item.label} className="flex flex-col">
-                <div
-                  className="flex justify-between items-center px-4 py-2"
-                  onClick={() =>
-                    item.dropdown ? setOpenDropdown(openDropdown === item.label ? null : item.label) : setIsOpen(false)
-                  }
-                >
+                <div className="flex justify-between items-center px-4 py-2">
                   <Link
                     href={item.href}
+                    onClick={() => setIsOpen(false)}
                     className={`text-sm font-medium ${
                       isActive(item.href)
                         ? "font-bold bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent"
@@ -318,7 +315,8 @@ export function Navbar() {
                   </Link>
                   {item.dropdown && (
                     <ChevronDown
-                      className={`w-4 h-4 transition-transform ${openDropdown === item.label ? "rotate-180" : ""}`}
+                      onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
+                      className={`w-4 h-4 transition-transform cursor-pointer ${openDropdown === item.label ? "rotate-180" : ""}`}
                     />
                   )}
                 </div>
@@ -328,23 +326,22 @@ export function Navbar() {
                   <div className="flex flex-col pl-8">
                     {item.dropdown.map((subItem) => (
                       <div key={subItem.label} className="flex flex-col">
-                        <div
-                          className="flex justify-between items-center py-2"
-                          onClick={() =>
-                            subItem.children
-                              ? setOpenSubDropdown(openSubDropdown === subItem.label ? null : subItem.label)
-                              : setIsOpen(false)
-                          }
-                        >
+                        <div className="flex justify-between items-center py-2">
                           <Link
                             href={subItem.href}
-                            className="text-sm text-gray-600 hover:text-teal-600"
+                            onClick={() => setIsOpen(false)}
+                            className={`text-sm font-medium ${
+                              isActive(subItem.href)
+                                ? "font-bold bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent"
+                                : "text-gray-600 hover:text-teal-600"
+                            }`}
                           >
                             {subItem.label}
                           </Link>
                           {subItem.children && (
                             <ChevronDown
-                              className={`w-4 h-4 transition-transform ${openSubDropdown === subItem.label ? "rotate-180" : ""}`}
+                              onClick={() => setOpenSubDropdown(openSubDropdown === subItem.label ? null : subItem.label)}
+                              className={`w-4 h-4 transition-transform cursor-pointer ${openSubDropdown === subItem.label ? "rotate-180" : ""}`}
                             />
                           )}
                         </div>

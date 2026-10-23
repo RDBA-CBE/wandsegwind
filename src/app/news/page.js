@@ -15,7 +15,7 @@ export default function NewsMedia() {
     
   
     <main className="min-h-screen bg-background">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 py-12">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 py-12">
         {/* Tab Navigation */}
         <div className="flex justify-center gap-4 mb-12">
 <button

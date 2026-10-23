@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
 export default function AboutWandseSection() {
@@ -12,9 +11,9 @@ export default function AboutWandseSection() {
 
   return (
     <section className="w-full py-10">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="flex flex-col lg:flex-row items-center lg:items-stretch">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 max-w-[90%] 2xl:max-w-[80%] mx-auto px-6 sm:px-8 py-8 lg:py-12 lg:ml-20">
+        <div className="w-full lg:w-1/2 max-w-[90%] 2xl:max-w-[80%] mx-auto px-6 sm:px-8 py-8 lg:py-12 lg:ml-10">
           <div className="flex items-center gap-3 mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#293E52]">
               About us
@@ -49,22 +48,13 @@ export default function AboutWandseSection() {
                 </a>
               </div>
 
-              <p className="leading-relaxed text-sm sm:text-base lg:text-lg">
-                As your trusted multi-brand parts specialist, WandSe offers a
-                vast inventory of components for virtually every major
-                manufacturer of wind turbines and solar plants. With over two
-                decades of industry experience and as part of the leading player
-                in the renewable space, Speed Team Group, we combine proven
-                experience with innovation to deliver end-to-end spare parts
-                solutions. <br />
-                Unavailability of spare parts in a wind or solar farm leads to
-                extended equipment downtime, resulting in significant financial
-                losses from lost power generation and increased operational
-                costs. With WandSe as your trusted parts solutions provider, you
-                experience fast delivery, expert support, and the right
-                part—every time. We don’t just maintain wind turbines; we
-                optimize performance, elevate efficiency, and safeguard your
-                assets.
+             <p className="leading-relaxed text-sm sm:text-base lg:text-lg">
+                We don’t just maintain wind turbines; we optimize performance,
+                elevate efficiency, and safeguard your assets. GWind specializes
+                in providing comprehensive Operation & Maintenance solutions of multi-brand wind turbines.
+                {/* <br /> <span className="font-bold">GWind specializes
+                in providing comprehensive Operation & Maintenance solutions of multi-brand wind turbines.{" "}</span> */}
+                
               </p>
             </div>
 
@@ -94,22 +84,38 @@ export default function AboutWandseSection() {
                   </svg>
                 </a>
               </div>
-              <p className="leading-relaxed text-sm sm:text-base lg:text-lg">
-                We don’t just maintain wind turbines; we optimize performance,
-                elevate efficiency, and safeguard your assets. <br /> <span className="font-bold">GWind specializes
-                in providing comprehensive Operation & Maintenance solutions of multi-brand wind turbines.{" "}</span>
-                
+
+               <p className="leading-relaxed text-sm sm:text-base lg:text-lg">
+                As your trusted multi-brand parts specialist, WandSe offers a
+                vast inventory of components for virtually every major
+                manufacturer of wind turbines and solar plants. With over two
+                decades of industry experience and as part of the leading player
+                in the renewable space, Speed Team Group, we combine proven
+                experience with innovation to deliver end-to-end spare parts
+                solutions. 
+                <br />
+                {/* Unavailability of spare parts in a wind or solar farm leads to
+                extended equipment downtime, resulting in significant financial
+                losses from lost power generation and increased operational
+                costs.  */}
+                {/* With WandSe as your trusted parts solutions provider, you
+                experience fast delivery, expert support, and the right
+                part—every time. 
+                We don’t just maintain wind turbines; we
+                optimize performance, elevate efficiency, and safeguard your
+                assets. */}
               </p>
+              
             </div>
           </div>
         </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
+        <div className="w-full lg:w-1/2 mt-6 lg:mt-0 relative min-h-[300px]">
           <img
             src="/images/about-main.svg"
             alt="Solar panels and wind turbines"
-            className="w-full h-auto lg:h-full object-cover"
+            className="w-full h-full object-cover absolute inset-0"
           />
         </div>
       </div>

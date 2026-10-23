@@ -49,7 +49,7 @@ const itemVariants = {
 export default function QualtitySection() {
   return (
     <section className="w-full py-12 px-4 md:px-6 lg:px-8 bg-white">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto">
         {/* Title */}
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
           <motion.h2
@@ -74,7 +74,7 @@ export default function QualtitySection() {
           viewport={{ once: true, margin: "-50px" }}
         >
           {/* Desktop Layout - Zig-Zag */}
-          <div className="hidden lg:flex justify-center items-start gap-6 lg:gap-20 max-w-[90%] 2xl:max-w-[80%] mx-auto mt-4">
+          <div className="hidden lg:flex justify-center items-start gap-6 lg:gap-20 max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto mt-4">
             {processItems.map((item, index) => {
               const isUpper = index === 1 || index === 3
               return (

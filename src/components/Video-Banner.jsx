@@ -49,7 +49,7 @@ export default function VideoBannerSection() {
 
       {/* Foreground Content */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="w-full max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="w-full md:w-1/2 lg:w-6/12">
             {/* Title */}
             <div className="relative h-20 sm:h-20 md:h-10 lg:h-38 overflow-hidden mb-2">

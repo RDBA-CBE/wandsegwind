@@ -54,7 +54,7 @@ const processItems = [
 
 const WhyChooseWandse = () => {
   return (
-    <section className="w-full max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 py-12 space-y-12">
+    <section className="w-full max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 py-12 space-y-12">
 
       {/* Heading */}
       <motion.div

@@ -69,7 +69,7 @@ export default function NewsSection() {
 
   if (loading) {
     return (
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-[#293E52] font-semibold">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-[#293E52] font-semibold">
         Loading...
       </div>
     );
@@ -78,7 +78,7 @@ export default function NewsSection() {
   
   if (noData) {
     return (
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-red-600 font-semibold">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-red-600 font-semibold">
         No News Found
       </div>
     );
@@ -86,7 +86,7 @@ export default function NewsSection() {
 
 
   return (
-    <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {currentItems

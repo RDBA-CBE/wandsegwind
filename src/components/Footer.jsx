@@ -68,7 +68,7 @@ export default function Footer() {
           className="absolute top-1 left-0 w-full hidden lg:block -translate-y-full"
         />
 
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-6 relative z-10 py-8">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-6 relative z-10 py-8">
           {/* Main footer content */}
           <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 gap-6 mb-2">
             {/* Left Section - Logo and Social */}
@@ -137,7 +137,7 @@ export default function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div className="md:col-span-1 lg:col-span-1">
+            <div className="md:col-span-2 lg:col-span-1">
               <h4 className="text-white font-semibold mb-4">Quick Link</h4>
               <ul className="space-y-2">
                 {[
@@ -165,7 +165,7 @@ export default function Footer() {
             </div>
 
             {/* Our O & M */}
-            <div className="md:col-span-1 lg:col-span-1">
+            <div className="md:col-span-2 lg:col-span-1">
               <h4 className="text-white font-semibold mb-4">O & M Contracts</h4>
               <ul className="space-y-2">
                 {[
@@ -196,7 +196,7 @@ export default function Footer() {
             </div>
 
             {/* Contact Us */}
-            <div className="md:col-span-2 lg:col-span-2">
+            <div className="md:col-span-4 lg:col-span-2">
               <h4 className="text-white font-semibold mb-4">Contact Us</h4>
               <div className="space-y-4">
                 {/* Head Office */}

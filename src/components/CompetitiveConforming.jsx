@@ -121,7 +121,7 @@ export default function CompetitiveConforming() {
       </div>
 
       {/* Two Column — In Stock parts */}
-      <section className="grid md:grid-cols-2 gap-8 items-start md:mb-36 mb-10 max-w-[90%] 2xl:max-w-[80%] mx-auto w-full">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:mb-36 mb-10 max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto w-full">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -129,19 +129,19 @@ export default function CompetitiveConforming() {
           variants={slideInLeft}
         >
           {twoColumn.leftImage && (
-            <img src={twoColumn.leftImage} alt={twoColumn.title} className="w-full h-full object-cover" />
+            <img src={twoColumn.leftImage} alt={twoColumn.title} className="block w-full h-auto object-cover" />
           )}
         </motion.div>
-        <div className="flex flex-col justify-between h-full md:min-h-[600px]">
+        <div className="flex flex-col justify-between h-full">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
-            className="md:mb-auto"
+            className="lg:mb-auto"
           >
-            <h2 className="text-xl md:text-4xl font-bold text-[#1a1a1a] mt-5 mb-45">{twoColumn.title}</h2>
-            <div className="text-md md:text-lg text-gray-600 leading-relaxed">{twoColumn.description}</div>
+            <h2 className="text-xl md:text-4xl font-bold text-[#1a1a1a] mt-5 mb-5">{twoColumn.title}</h2>
+            <div className="text-base md:text-lg text-gray-600 leading-relaxed">{twoColumn.description}</div>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -149,7 +149,7 @@ export default function CompetitiveConforming() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
             transition={{ delay: 0.2 }}
-            className="md:mt-8 mt-5"
+            className="lg:mt-8 mt-5"
           >
             {twoColumn.bottomImage && (
               <img src={twoColumn.bottomImage} alt={twoColumn.title} className="w-full h-auto rounded-lg" />
@@ -159,21 +159,21 @@ export default function CompetitiveConforming() {
       </section>
 
       {/* Five Content — Competitive Pricing & Cost Flexibility */}
-      <section className="md:space-y-12 space-y-6 max-w-[90%] 2xl:max-w-[80%] mx-auto w-full">
-        <div className="grid md:grid-cols-2 md:gap-20 gap-4 items-start">
-          <div className="md:space-y-6">
+      <section className="lg:space-y-12 space-y-6 max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto w-full">
+        <div className="grid lg:grid-cols-2 lg:gap-20 gap-4 items-start">
+          <div className="lg:space-y-6">
             <h2 className="text-xl md:text-3xl font-bold text-[#1a1a1a] leading-tight">{fiveContent.title}</h2>
           </div>
-          <div className="flex md:justify-end justify-center">
-            <div className="md:text-right md:ml-auto">
+          <div className="flex lg:justify-end">
+            <div className="lg:text-right lg:ml-auto">
               <div className="text-base md:text-lg text-gray-600 leading-relaxed">{fiveContent.description}</div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between gap-8 items-start">
-          <div className="md:py-16">
-            <div className="md:space-y-8 space-y-4 mt-12">
-              <div className="space-y-8 border-t border-gray-200 pt-8 flex flex-col md:flex-row gap-3">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 items-start">
+          <div className="w-full lg:py-16">
+            <div className="lg:space-y-8 space-y-4 mt-6 lg:mt-12">
+              <div className="space-y-8 border-t border-gray-200 pt-8 flex flex-col lg:flex-row gap-3">
                 {fiveContent.solutions.map((solution, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="flex-shrink-0">
@@ -198,38 +198,38 @@ export default function CompetitiveConforming() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={slideInRight}
-              className="w-full lg:w-[300px] md:flex-shrink-0"
+              className="w-full lg:w-[300px] lg:flex-shrink-0"
             >
-              <img src={fiveContent.imagePath} alt={fiveContent.title} className="w-full h-[420px] object-cover" />
+              <img src={fiveContent.imagePath} alt={fiveContent.title} className="w-full h-56 sm:h-72 lg:h-[420px] object-cover rounded-lg" />
             </motion.div>
           )}
         </div>
       </section>
 
       {/* Three Column — CRM, Procurement, Regulatory */}
-      <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[#FBFDFF]">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto space-y-0 px-2 md:px-0">
+      <section className="w-full bg-[#FBFDFF] mt-10">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-2 md:px-0">
           {threeColumn.map((sec, i) => {
             const isOdd = Number(i + 1) % 2 !== 0;
             return (
               <div key={i}>
                 {i !== 0 && <div className="border-t border-[#00000099]/20"></div>}
-                <div className="grid grid-cols-1 lg:grid-cols-[40%_25%_40%]">
+                <div className="grid grid-cols-1 xl:grid-cols-[32%_32%_36%]">
                   {isOdd ? (
                     <div className="p-4 md:p-12 flex items-center">
                       <h2 className="text-xl md:text-3xl font-bold text-[#1a1a1a] leading-tight">{sec.title}</h2>
                     </div>
                   ) : (
-                    <div className="min-h-[200px] flex items-center justify-center">
-                      <img src={sec.imagePath} alt={sec.title} className="w-full h-[250px] md:h-full object-cover px-4" />
+                    <div className="flex items-center justify-center py-4">
+                      <img src={sec.imagePath} alt={sec.title} className="w-full h-48 sm:h-64 md:h-72 object-cover rounded-lg px-2" />
                     </div>
                   )}
                   {isOdd ? (
-                    <div className="min-h-[200px] flex items-center justify-center border-b lg:border-b-0 lg:border-r border-[#00000099]/20">
-                      <img src={sec.imagePath} alt={sec.title} className="w-full h-[250px] md:h-full object-cover px-4" />
+                    <div className="flex items-center justify-center py-4 xl:border-r border-[#00000099]/20">
+                      <img src={sec.imagePath} alt={sec.title} className="w-full h-48 sm:h-64 md:h-72 object-cover rounded-lg px-2" />
                     </div>
                   ) : (
-                    <div className="p-4 md:p-12 flex items-center border-b lg:border-b-0 lg:border-r border-[#00000099]/20">
+                    <div className="p-4 md:p-12 flex items-center xl:border-r border-[#00000099]/20">
                       <h2 className="text-xl md:text-3xl font-bold text-[#1a1a1a] leading-tight">{sec.title}</h2>
                     </div>
                   )}
@@ -245,7 +245,7 @@ export default function CompetitiveConforming() {
 
       {/* Other Solutions */}
       <section className="w-full bg-gray-50 py-12">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4">
           <h2 className="text-3xl font-semibold text-[#293E52] mb-10">Other Solutions</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {expertiseTabs

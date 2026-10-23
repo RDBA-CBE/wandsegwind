@@ -100,7 +100,7 @@ export default function SpecializedTechnical() {
       </div>
 
       {/* Two Column — Multibrand/Multi-Technology Knowledge */}
-      <section className="grid md:grid-cols-2 gap-8 items-start md:mb-36 mb-10 max-w-[90%] 2xl:max-w-[80%] mx-auto w-full">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start lg:mb-36 mb-10 max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto w-full">
         {/* Left Image */}
         <motion.div
           initial="hidden"
@@ -112,24 +112,24 @@ export default function SpecializedTechnical() {
             <img
               src={twoColumn.leftImage}
               alt={twoColumn.title}
-              className="w-full h-full object-cover"
+              className="block w-full h-auto object-cover"
             />
           )}
         </motion.div>
 
         {/* Right Content */}
-        <div className="flex flex-col justify-between h-full md:min-h-[600px]">
+        <div className="flex flex-col justify-between h-full">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
-            className="md:mb-auto"
+            className="lg:mb-auto"
           >
-            <h2 className="text-xl md:text-4xl font-bold text-[#1a1a1a] mt-5 mb-45">
+            <h2 className="text-xl md:text-4xl font-bold text-[#1a1a1a] mt-5 mb-4">
               {twoColumn.title}
             </h2>
-            <div className="text-md md:text-lg text-gray-600 leading-relaxed">
+            <div className="text-base md:text-lg text-gray-600 leading-relaxed">
               {twoColumn.description}
             </div>
           </motion.div>
@@ -140,7 +140,7 @@ export default function SpecializedTechnical() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
             transition={{ delay: 0.2 }}
-            className="md:mt-8 mt-5"
+            className="lg:mt-8 mt-5"
           >
             {twoColumn.bottomImage && (
               <img
@@ -154,16 +154,16 @@ export default function SpecializedTechnical() {
       </section>
 
       {/* Five Content — Component Specification Mastery */}
-      <section className="md:space-y-12 space-y-6 max-w-[90%] 2xl:max-w-[80%] mx-auto w-full">
+      <section className="lg:space-y-12 space-y-6 max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto w-full">
         {/* Top Grid: Title + Description */}
-        <div className="grid md:grid-cols-2 md:gap-20 gap-4 items-start">
-          <div className="md:space-y-6">
+        <div className="grid lg:grid-cols-2 lg:gap-20 gap-4 items-start">
+          <div className="lg:space-y-6">
             <h2 className="text-xl md:text-3xl font-bold text-[#1a1a1a] leading-tight">
               {fiveContent.title}
             </h2>
           </div>
-          <div className="flex md:justify-end justify-center">
-            <div className="md:text-right md:ml-auto">
+          <div className="flex lg:justify-end">
+            <div className="lg:text-right lg:ml-auto">
               <div className="text-base md:text-lg text-gray-600 leading-relaxed">
                 {fiveContent.description}
               </div>
@@ -172,11 +172,11 @@ export default function SpecializedTechnical() {
         </div>
 
         {/* Bottom: Solutions List + Main Image */}
-        <div className="flex flex-col md:flex-row justify-between gap-8 items-start">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 items-start">
           {/* Left List */}
-          <div className="md:py-16">
-            <div className="md:space-y-8 space-y-4 mt-12">
-              <div className="space-y-8 border-t border-gray-200 pt-8 flex flex-col md:flex-row gap-3">
+          <div className="w-full lg:py-16">
+            <div className="lg:space-y-8 space-y-4 mt-6 lg:mt-12">
+              <div className="space-y-8 border-t border-gray-200 pt-8 flex flex-col lg:flex-row gap-3">
                 {fiveContent.solutions.map((solution, i) => (
                   <div key={i} className="flex gap-4">
                     {/* Icon */}
@@ -213,12 +213,12 @@ export default function SpecializedTechnical() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={slideInRight}
-              className="w-full lg:w-[300px] md:flex-shrink-0"
+              className="w-full lg:w-[300px] lg:flex-shrink-0"
             >
               <img
                 src={fiveContent.imagePath}
                 alt={fiveContent.title}
-                className="w-full h-[420px] object-cover"
+                className="w-full h-56 sm:h-72 lg:h-[420px] object-cover rounded-lg"
               />
             </motion.div>
           )}
@@ -227,7 +227,7 @@ export default function SpecializedTechnical() {
 
       {/* Other Solutions */}
       <section className="w-full bg-gray-50 py-12">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4">
           <h2 className="text-3xl font-semibold text-[#293E52] mb-10">
             Other Solutions
           </h2>

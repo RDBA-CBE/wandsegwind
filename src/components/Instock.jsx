@@ -45,7 +45,7 @@ export default function InstockSections() {
     <main className="w-full bg-white">
 
       {/* ===== Section 1 ===== */}
-      <section className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 py-12">
+      <section className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 py-12">
         <div className="text-center mb-2 max-w-5xl mx-auto">
           <p className="text-lg text-[#293E52]">GWind is one among very few strategic O&M solution providers to stock all types of major spares, accessories, electrical and electronic spares for multi brand turbines.</p>
         </div>
@@ -66,7 +66,7 @@ export default function InstockSections() {
       </section>
 
       {/* ===== Section 2 ===== */}
-      <section className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 pb-12">
+      <section className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 pb-12">
         <h2 className="text-2xl sm:text-3xl font-semibold text-[#293E52] text-left mb-10">
           Major Spares
         </h2>
@@ -87,7 +87,7 @@ export default function InstockSections() {
       </section>
 
       {/* ===== Section 3 (Repeat) ===== */}
-      <section className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 py-16 border-t border-gray-200">
+      <section className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 py-16 border-t border-gray-200">
         <h2 className="text-2xl sm:text-3xl font-semibold text-[#293E52] text-left mb-10">
 Electrical Spares
         </h2>

@@ -22,9 +22,9 @@ export function QualityCommitment() {
       </div>
 
       {/* Main image section with overlay */}
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className="relative w-full h-96 sm:h-[500px] md:h-[600px] lg:h-[600px] rounded-2xl overflow-hidden bg-cover bg-center"
+          className="relative w-full min-h-96 sm:min-h-[500px] md:min-h-[600px] rounded-2xl overflow-hidden bg-cover bg-center"
           style={{
             backgroundImage: `url('/images/commit.svg')`,
             backgroundSize: "cover",
@@ -32,7 +32,7 @@ export function QualityCommitment() {
           }}
         >
           {/* Bullet points container - positioned on the left */}
-          <div className="absolute inset-0 flex items-center rounded-2xl">
+          <div className="flex items-center rounded-2xl py-8">
             <div className="relative w-full sm:w-1/2 px-6 sm:px-8 lg:px-12 py-6 sm:py-8">
               <div className="absolute inset-0  rounded-l-2xl" />
 

@@ -21,7 +21,7 @@ export default function MainSolutions() {
 
   return (
     <>
-      <InnerBanner title="Solutions" bgImage="/images/sol-bg.svg" />
+      <InnerBanner title="GWind Solutions" bgImage="/images/sol-bg.svg" />
 
       
       <CenterContentSection />

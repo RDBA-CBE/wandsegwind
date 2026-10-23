@@ -68,7 +68,7 @@ export default function SolutionsGwind() {
 
   return (
     <section className="w-full bg-gradient-to-b from-[#329ACD] to-[#3AB257] px-4 py-12 md:px-8 md:py-16">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-4 flex justify-center">
           <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white flex items-center gap-2">

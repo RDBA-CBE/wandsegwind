@@ -44,7 +44,7 @@ export default function TechSection() {
 
   return (
     <div className="w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto">
         {/* Title */}
         <div className="flex items-center justify-center mb-12">
   <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#293E52] text-center mr-2">

@@ -34,7 +34,7 @@ export default function ProjectsSection() {
   return (
     <>
     <section className="w-full px-4 py-12 md:px-6 lg:px-8">
-      <div className="mx-auto max-w-[90%] 2xl:max-w-[80%]">
+      <div className="mx-auto max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%]">
 
         {/* Heading */}
         <div className="mb-12 text-center">

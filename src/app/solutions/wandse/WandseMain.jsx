@@ -108,7 +108,7 @@ export default function WandseMain() {
   return (
     <>
       {/* Intro Section */}
-      <section className="w-full flex flex-col lg:flex-row items-start justify-between py-16 max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
+      <section className="w-full flex flex-col lg:flex-row items-start justify-between py-16 max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
         <div className="w-full space-y-6 text-[#293E52] text-base leading-relaxed grid md:grid-cols-2 grid-cols-1 gap-4">
           <p>{pageData.introText}</p>
           <p>{pageData.introtext1}</p>
@@ -117,7 +117,7 @@ export default function WandseMain() {
 
       {/* Process / Innovation Section */}
       <section className="w-full py-0 px-4 md:px-6 lg:px-8 bg-white">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto">
           <motion.div
             className="w-full"
             variants={containerVariants}
@@ -126,7 +126,7 @@ export default function WandseMain() {
             viewport={{ once: true, margin: "-50px" }}
           >
             {/* Desktop Layout - Zig-Zag */}
-            <div className="hidden lg:flex justify-center items-start gap-6 lg:gap-20 max-w-[90%] 2xl:max-w-[80%] mx-auto mt-4">
+            <div className="hidden lg:flex justify-center items-start gap-6 lg:gap-20 max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto mt-4">
               {pageData.processItems.map((item, index) => {
                 const isUpper = index === 1 || index === 3;
                 return (
@@ -172,7 +172,7 @@ export default function WandseMain() {
 
       {/* Spare Parts Cards */}
       <section className="w-full md:py-28 md:pb-15 py-12 px-4 md:px-6 lg:px-8 bg-white">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {tabsData.map((item) => (
               <div

@@ -75,7 +75,7 @@ export default function SolarPlantSpare() {
   return (
     <>
       {/* Description */}
-      <section className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 py-10">
+      <section className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 py-10">
         <div
           className="
             text-[#293E52] leading-relaxed text-center
@@ -87,7 +87,7 @@ export default function SolarPlantSpare() {
 
       {/* Grid — Spare Parts Cards */}
       <section className="bg-white md:py-5">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {gridCards.slice(0, visibleCount).map((card, i) => (
               <div
@@ -135,8 +135,8 @@ export default function SolarPlantSpare() {
 
       {/* Two Column — Images + Content */}
       <section className="w-full bg-white py-16">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <div className="flex flex-col gap-6">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="flex flex-col sm:flex-row lg:flex-col gap-6">
             <div className="w-full sm:w-[48%]">
               <h2 className="text-3xl font-semibold text-[#293E52] mb-4">
                 {twoColumn.title}
@@ -153,7 +153,7 @@ export default function SolarPlantSpare() {
               )}
             </div>
             {twoColumn.images[1] && (
-              <div className="w-full sm:w-[48%] sm:self-end -mt-150">
+              <div className="w-full sm:w-[48%] sm:self-end lg:-mt-150">
                 <div className="relative h-120 rounded-xl overflow-hidden shadow-md">
                   <Image
                     src={twoColumn.images[1].file_path}
@@ -180,7 +180,7 @@ export default function SolarPlantSpare() {
 
       {/* Our Solution */}
       <section className="w-full bg-white py-16">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-10 text-left">
             Our Solution
           </h2>

@@ -33,7 +33,7 @@ export function CallButton() {
 
   return (
     <div className="w-full flex items-center justify-center py-4 px-4 lg:py-10">
-      <div className="w-full max-w-[90%] 2xl:max-w-[80%] bg-white rounded-md shadow-[0_2px_16px_rgba(0,0,0,0.25)] p-6 md:p-8 lg:p-8 my-10">
+      <div className="w-full max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] bg-white rounded-md shadow-[0_2px_16px_rgba(0,0,0,0.25)] p-6 md:p-8 lg:p-8 my-10">
         {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12  lg:gap-8 items-start">
           {/* Left Section */}

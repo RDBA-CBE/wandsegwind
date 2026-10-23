@@ -53,7 +53,7 @@ export default function AboutUsSection() {
       {/* ===================== STATS SECTION ===================== */}
 
        {/* Stats Grid */}
-                  <div className="border border-border rounded-lg overflow-hidden max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="border border-border rounded-lg overflow-hidden max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                       {stats.map((stat, index) => (
                         <motion.div
@@ -101,7 +101,7 @@ export default function AboutUsSection() {
                   </div>
                   
       <section className="w-full bg-background py-12 md:py-10">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border border-border rounded-lg overflow-hidden">
 
             {/* 🔄 LOADING */}

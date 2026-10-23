@@ -10,7 +10,7 @@ export function CertificationsSection() {
     setOpenIndex(openIndex === index ? null : index)
   }
 
-  return (    <div className="w-full max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 py-12">
+  return (    <div className="w-full max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 py-12">
       {/* Header Section */}
       <div className="text-center mb-12 space-y-4">
         <p className="text-[#293E52] text-sm sm:text-sm md:text-base lg:text-base max-w-4xl mx-auto">

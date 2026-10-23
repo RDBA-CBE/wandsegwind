@@ -39,7 +39,7 @@ export default function CommitSection() {
       </h2>
       <p className="text-sm sm:text-sm md:text-base lg:text-base text-[#293E52] max-w-6xl mx-auto mb-12 text-center">Our comprehensive Total Asset Management services are designed to maximize your energy production and protect your investment. Before we dive into our comprehensive solutions, lets see some of the challenges our clients face in wind farm operations</p>
 
-      <div className="relative max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-8">
+      <div className="relative max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-8">
         {/* Vertical line only visible on desktop */}
         <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[2px] bg-gray-200 h-[93%]"></div>
 

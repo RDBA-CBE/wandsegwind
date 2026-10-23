@@ -266,7 +266,7 @@ const threeColumnImage =
   return (
     <section
       key={`desc-${block.data.data_uniq_id}`}
-      className="max-w-[90%] 2xl:max-w-[80%] mx-auto px- py-10"
+      className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px- py-10"
     >
       <div
         className="
@@ -347,7 +347,7 @@ const threeColumnImage =
       key={`two-${index}`}
       className="w-full bg-white py-12"
     >
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         
         {/* LEFT SIDE */}
         <div className="flex flex-col justify-between h-full">
@@ -407,7 +407,7 @@ const threeColumnImage =
 
   return (
     <section key={`grid-${index}`} className="w-full bg-gray-50 py-12">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
 
         {/* GRID TITLE */}
         {title && (
@@ -482,7 +482,7 @@ const threeColumnImage =
       
 
       {/* SECTION 2 */}
-      <section className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 py-12 flex flex-col md:flex-row gap-10 items-center md:items-start">
+      <section className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8 py-12 flex flex-col md:flex-row gap-10 items-center md:items-start">
 
         {/* LEFT – TITLES */}
         <div className="flex flex-row md:flex-col gap-4 w-full md:w-1/4 text-center md:text-left">
@@ -575,7 +575,7 @@ case "flowchart": {
         your energy production and protect your investment.
       </p>
 
-      <div className="relative max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-8">
+      <div className="relative max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-8">
         {/* Vertical line */}
         <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[2px] bg-gray-200 h-[93%]" />
 
@@ -651,7 +651,7 @@ case "flowchart": {
 
 
 <section className="w-full bg-white py-16 ">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
         {/* Title */}
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-10 text-left">
           Other O&M Contracts

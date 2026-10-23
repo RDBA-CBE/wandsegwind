@@ -38,7 +38,7 @@ export default function InfoGridSection() {
 
   return (
     <section className="w-full px-6 pt-12 bg-gray-100">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto flex flex-col lg:flex-row items-start gap-10">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto flex flex-col lg:flex-row items-start gap-10">
         {/* LEFT SIDE */}
         <div className="lg:w-1/2 w-full flex flex-col justify-center">
           <h2 className="flex items-center gap-2 text-3xl md:text-4xl font-semibold text-gray-900 mb-4">

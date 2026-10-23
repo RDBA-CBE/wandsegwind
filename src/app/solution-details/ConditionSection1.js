@@ -119,7 +119,7 @@ export default function ConditionSection1() {
       {!loading && content && (
         <>
           {/* DESCRIPTION */}
-          <section className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 py-10">
+          <section className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 py-10">
             {descriptions.map((item) => (
               <div key={item.data_uniq_id} className="mb-6 text-center">
                 <div
@@ -148,7 +148,7 @@ export default function ConditionSection1() {
 
           {/* TWO COLUMN SECTION */}
           <section className="w-full bg-white pt-16 px-4 md:px-6 lg:px-8 -mb-5">
-            <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
               <div className="flex flex-col justify-center">
                 <h2 className="text-2xl md:text-3xl font-semibold text-[#293E52] mb-4">
                   What We Do
@@ -210,7 +210,7 @@ export default function ConditionSection1() {
 
           {/* OTHER SOLUTIONS */}
           <section className="w-full bg-gray-50 py-12">
-            <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4">
+            <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4">
               <h2 className="text-3xl font-semibold text-[#293E52] mb-10">
                 Other Solutions
               </h2>

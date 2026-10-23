@@ -59,7 +59,7 @@ export default function ExpertiseMain() {
   };
 
   return (
-    <div className="w-full max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div className="w-full max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <p className="mb-16 text-center text-sm sm:text-sm md:text-base lg:text-base text-[#293E52]">
         From procurement, warehousing, logistics to technical support and
         refurbishment, WandSe is your one-stop solution for renewable energy

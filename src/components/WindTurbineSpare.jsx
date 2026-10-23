@@ -74,7 +74,7 @@ export default function WindTurbineSpare() {
   return (
     <>
       {/* Description */}
-      <section className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 py-10">
+      <section className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 py-10">
         <div
           className="
             text-[#293E52] leading-relaxed text-center
@@ -86,7 +86,7 @@ export default function WindTurbineSpare() {
 
       {/* Grid — Spare Parts Cards */}
       <section className="bg-white md:py-5">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {gridCards.slice(0, visibleCount).map((card, i) => (
               <div
@@ -134,7 +134,7 @@ export default function WindTurbineSpare() {
 
       {/* Two Column — Content Only */}
       <section className="w-full bg-white py-16">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-10 items-start">
             <div className="w-full md:w-1/3">
               <h2 className="text-5xl font-semibold text-[#293E52]">
@@ -156,7 +156,7 @@ export default function WindTurbineSpare() {
 
       {/* Our Solution */}
       <section className="w-full bg-white py-16">
-        <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
+        <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-10 text-left">
             Our Solution
           </h2>

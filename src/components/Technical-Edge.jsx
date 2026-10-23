@@ -7,7 +7,7 @@ export default function TechnicalSection() {
 
   return (
     <section className="w-full bg-white py-12">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto px-4 md:px-6 lg:px-8">
         {/* Title and Content Section */}
         <div className="flex flex-col md:flex-row items-start justify-between gap-8">
           {/* Left Title */}

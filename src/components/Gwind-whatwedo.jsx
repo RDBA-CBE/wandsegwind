@@ -39,7 +39,7 @@ export default function Whatwedo() {
 
   return (
     <section className="w-full bg-white pt-16 px-4 md:px-6 lg:px-8 -mb-5">
-      <div className="max-w-[90%] 2xl:max-w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      <div className="max-w-[94%] md:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Side */}
         <div className="flex flex-col justify-center">
           <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#293E52] mb-4">
